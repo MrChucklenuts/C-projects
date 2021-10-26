@@ -1,0 +1,41 @@
+#include <stdio.h>
+#define TRUE 1
+#define FALSE 0
+
+int main(void)
+{
+   int divisor, test int, nth_prime, prime_count;
+   _Bool isPrime;
+   
+   printf("enter nth prime number");
+   scanf("%i", &nth_prime);
+   
+   prime_count = 0;
+   test_int = 1;
+   do
+   {
+      test_int++;
+      
+      isPrime = TRUE;
+      for (divisor = 2; divisor<test_int; divisor++)
+      {
+         if (test_int%divisor == 0)
+         {
+            isPrime = FALSE;
+            break;
+         }
+      }
+      
+      if (isPrime = TRUE)
+      {
+         prime_count++;
+      }
+   }
+   while (prime_count<nth_prime);
+   
+   if (prime_count == nth_prime)
+   {
+      printf("%i\n", &test_int);
+   }
+return 0;
+}

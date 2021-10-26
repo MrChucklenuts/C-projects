@@ -35,7 +35,7 @@ int main(void)
    
    if (prime_count == nth_prime)
    {
-      printf("%i\n", &test_int);
+      printf("%i\n", test_int);
    }
 return 0;
 }
